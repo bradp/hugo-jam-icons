@@ -11,6 +11,6 @@
   @example - Go Template
     {{ partial "jam/icon" "ghost" }}
 */}}
-{{- with resources.Get (print "jam/icons/" .) -}}
+{{- with resources.Get (print "jam/" .) -}}
   {{- .Content | safeHTML -}}
 {{- end -}}
