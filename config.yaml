@@ -3,7 +3,7 @@ module:
     min: '0.64.0'
   mounts:
     - source: page/index.md
-      target: content/mods/jamicons.md
+      target: content/jamicons.md
     - source: page/template.html
       target: layouts/_default/jamicons.html
     - source: partials
