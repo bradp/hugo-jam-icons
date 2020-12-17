@@ -1,18 +1,30 @@
-
 {{ define "main" }}
-  <style>
-    ul.jamicon{max-width: 500px; margin: 0 auto;}
-    ul.jamicon li{display:flex; align-items: center; justify-content: space-between; padding: .5rem; fill: currentColor;}
-    ul.jamicon li:nth-child(odd){background-color: rgba(201, 194, 194, 0.982);}
-  </style>
-  <ul class="jamicon">
-  {{ range resources.Match "jam/icons/*.svg" }}
+<style>
+ul.jamicons {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+ul.jamicons li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    fill: currentColor;
+}
+
+ul.jamicons li:nth-child(odd) {
+    background-color: rgba(201, 194, 194, 0.982);
+}
+</style>
+<ul class="jamicons">
+    {{ range resources.Match "jam/icons/*.svg" }}
     <li>
-    {{ replace .Name "jam/icons/" "" }}:
-		<span>
-		  {{ .Content | safeHTML }}
-    </span>
+        {{ replace .Name "jam/icons/" "" }}:
+        <span>
+            {{ .Content | safeHTML }}
+        </span>
     </li>
-  {{ end }}
+    {{ end }}
 </ul>
 {{ end }}

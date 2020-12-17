@@ -9,8 +9,8 @@
   @access public
 
   @example - Go Template
-    {{ partial "jam/icon" "ghost" }}
+    {{ partial "jam/icons" "ghost" }}
 */}}
-{{- with resources.Get (print "jam/" .) -}}
+{{- with resources.Get (print "jam/icons" .) -}}
   {{- .Content | safeHTML -}}
 {{- end -}}

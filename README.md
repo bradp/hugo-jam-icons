@@ -3,11 +3,13 @@ Hugo module to easily use [Jam Icons](https://jam-icons.com) anywhere in your si
 
 ## Installation
 
-First, [init](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module) your project as Hugo Module. 
+First, [init](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module) your project as Hugo Module.:
 
 ```
 hugo mod init github.com/<your-user>/<your-project>
 ```
+
+Then edit your config file to import the module:
 
 ```toml
 # config.toml
@@ -16,4 +18,16 @@ hugo mod init github.com/<your-user>/<your-project>
     path = "github.com/bradp/hugo-jam-icons"
 ```
 
+### Upating
+
+To update all modules:
+```
+hugo mod get -u
+```
+
+You may need to run `hugo mod clean` if something isn't working right.
+
+
 ## Usage
+
+
