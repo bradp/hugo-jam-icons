@@ -1,0 +1,16 @@
+{{/*
+  icon
+  Output an icon from "context"
+
+  @author @bradp
+
+  @context String (.)
+
+  @access public
+
+  @example - Go Template
+    {{ partial "jam/icon" "ghost" }}
+*/}}
+{{- with resources.Get (print "jam/icons/" .) -}}
+  {{- .Content | safeHTML -}}
+{{- end -}}
