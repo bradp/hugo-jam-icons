@@ -1,16 +1,15 @@
 {{/*
   icon
-  Output an icon from "context"
+  Will print the icon matching the string passed as "context"
 
-  @author @bradp
+  @author @yourstruly
 
   @context String (.)
 
   @access public
 
   @example - Go Template
-    {{ partial "jam/icons" "ghost" }}
+    {{ partial "jam-icons/icon" "cart" }}
 */}}
-{{- with resources.Get (print "jam/icons" .) -}}
-  {{- .Content | safeHTML -}}
-{{- end -}}
+
+<span class="jam">{{- $icon := resources.Get (print "jam-icons/icons/" . ".svg" ) -}}{{- $icon.Content | safeHTML -}}</span>

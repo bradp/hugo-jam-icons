@@ -1,11 +1,11 @@
 {{ define "main" }}
 <style>
-ul.jamicons {
+ul.jam-icons-list {
     max-width: 500px;
     margin: 0 auto;
 }
 
-ul.jamicons li {
+ul.jam-icons-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,14 +13,14 @@ ul.jamicons li {
     fill: currentColor;
 }
 
-ul.jamicons li:nth-child(odd) {
+ul.jam-icons-list li:nth-child(odd) {
     background-color: rgba(201, 194, 194, 0.982);
 }
 </style>
-<ul class="jamicons">
-    {{ range resources.Match "jam/icons/*.svg" }}
+<ul class="jam-icons-list">
+    {{ range resources.Match "jam-icons/icons/*.svg" }}
     <li>
-        {{ replace .Name "jam/icons/" "" }}:
+        {{ replace .Name "jam-icons/icons/" "" }}
         <span>
             {{ .Content | safeHTML }}
         </span>

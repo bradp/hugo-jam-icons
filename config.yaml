@@ -3,13 +3,14 @@ module:
     min: '0.64.0'
   mounts:
     - source: page/index.md
-      target: content/jamicons.md
+      target: content/jam-icons-listing.md
+      lang: en
     - source: page/template.html
-      target: layouts/_default/jamicons.html
+      target: layouts/_default/jam-icons-listing.html
     - source: partials
       target: layouts/partials/jam
   imports:
     - path: github.com/michaelampr/jam
       mounts:
-        - source: icons
-          target: assets/jam/icons
+      - source: icons
+        target: assets/jam-icons/icons

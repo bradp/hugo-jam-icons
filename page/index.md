@@ -1,4 +1,4 @@
 ---
 title: Jam Icons List
-layout: jamicon
+layout: jam-icons-listing
 ---
