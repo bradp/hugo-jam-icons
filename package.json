@@ -1,0 +1,24 @@
+{
+	"name": "hugo-jam-icons",
+	"version": "0.1.0",
+	"description": "Hugo module to easily bring Jam Icons into your project.",
+	"keywords": [
+		"hugo",
+		"icons",
+		"module",
+		"hugo-module",
+		"jam-icons"
+	],
+	"homepage": "https://github.com/bradp/hugo-jam-icons",
+	"bugs": "https://github.com/bradp/hugo-jam-icons/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bradp/hugo-jam-icons.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Brad Parbs",
+		"email": "brad@bradparbs.com",
+		"url": "https://bradparbs.com"
+	}
+}
