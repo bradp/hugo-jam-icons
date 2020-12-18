@@ -3,10 +3,10 @@ module:
     min: '0.64.0'
   mounts:
     - source: page/index.md
-      target: content/jam-icons-listing.md
+      target: content/jamicons.md
       lang: en
     - source: page/template.html
-      target: layouts/_default/jam-icons-listing.html
+      target: layouts/_default/jamicons.html
     - source: partials
       target: layouts/partials/jam
   imports:

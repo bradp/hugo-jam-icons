@@ -9,7 +9,7 @@
   @access public
 
   @example - Go Template
-    {{ partial "jam-icons/icon" "cart" }}
+    {{ partial "jam-icons/icon" "ghost" }}
 */}}
 
 <span class="jam">{{- $icon := resources.Get (print "jam-icons/icons/" . ".svg" ) -}}{{- $icon.Content | safeHTML -}}</span>

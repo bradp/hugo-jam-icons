@@ -30,4 +30,12 @@ You may need to run `hugo mod clean` if something isn't working right.
 
 ## Usage
 
+To any layout file, simple use this partial (replacing 'ghost' with your chosen icon.)
 
+```
+{{ partial "jam-icons/icon" "ghost" }}
+```
+
+To view all the icons & their names, you can go to `<your-site>/jamicons`.
+
+Enjoy!
